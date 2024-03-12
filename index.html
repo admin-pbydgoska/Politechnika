@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHZ19B0KSR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RHZ19B0KSR');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Przykładowa Strona z Linkiem JavaScript</title>
@@ -10,15 +19,7 @@
 <p>Kliknij poniższy link, aby wywołać przekierowanie za pomocą JavaScript:</p>
 <a href="#" id="redirectLink">Przejdź do strony atakującego</a>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5CDFM8SW3"></script>
 <script>
-
-window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RHZ19B0KSR');
-
 // Funkcja wywołująca przekierowanie po kliknięciu na link
 document.getElementById('redirectLink').addEventListener('click', function(event) {
     // Unikaj domyślnej akcji kliknięcia (przekierowania)
